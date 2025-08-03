@@ -54,3 +54,7 @@ class EpisodeUpdate(BaseModel):
     season: int
     episode: int
     status: str
+
+class ReviewNote(BaseModel):
+    reviewText: str
+    media: Optional[MediaBase] = None
