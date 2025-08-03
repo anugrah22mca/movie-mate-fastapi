@@ -10,7 +10,7 @@ load_dotenv()
 
 # Initialize FastAPI router and OpenAI client
 router = APIRouter()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI()
 
 # Pydantic models
 class Media(BaseModel):
